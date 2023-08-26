@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel ="stylesheet" href="check.css">
+    <head>
+        <title>COASTAL</title>
+        <link rel="icon" type="image/x-icon" href="cpp.png">
+    </head>
+
+    <body>
+        <!--zer head-->
+       
+        <div class="header">
+           <h1><a href="coast2.html">COASTAL</a></h1>
+       </div>
+
+       <!--zer navigation-->
+       <div class="topnav">
+           <div class="dropdown">
+               <span>Clothing</span>
+               <div class="dropdown-content">
+                   <a href="women.html">Women's</a>
+                   <a href="men.html">Men's</a>
+                   <a href="#">Kids</a>
+               </div>
+           </div>
+           <div class="dropdown">
+               <span>Cosmetics</span>
+               <div class="dropdown-content">
+                   <a href="skin.html">Skin Care</a>
+                   <a href="materials.html">Materials</a>
+                   <a href="wigs.html">Wigs</a>
+               </div>
+           </div>
+           <div class="dropdown">
+             <span>Contacts</span>
+             <div class="dropdown-content">
+                 <a href="https://www.instagram.com/coastalshop.zm/">Instagram</a>
+                 <a href="#">Facebook</a>
+                 <a href="#">Whatsapp</a>
+                 <a href="#">E-mail</a>
+             </div>
+         </div>
+           <a href="help.html" style="float:right">Basket</a>
+         </div>
+
+        <br><br>
+
+         <section>
+            <nav>
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 4</div>
+                      <img src="record.JPG" style="height:500px">
+                    
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 4</div>
+                      <img src="record2.JPG" style="height:500px">
+                    
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 4</div>
+                      <img src="record3.JPG" style="height:500px">
+                      
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="record4.JPG" style="height:500px">
+                        
+                      </div>
+                    
+                    </div>
+                    <br>
+            
+            <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span>
+            </div>
+            </nav>
+            
+            <article>
+                <h1>Record</h1>
+                    <p>An organic cosmetic, shea butter is extracted from the nut of the African shea tree. Completely hand</p> 
+                    <p>processed in Nigeria by those native to the shea tree's land of origin, our shea butter can be used</p> 
+                    <p>as a moisturiser, salve or lotion. Known to restore elasticity to the skin, help with acne, protect </p>
+                    <p>against the sun, wind or dry skin, our shea butter may be just what you need to look your best everyday!</p>
+                    <input type="range">
+            </article>
+            </section>
+    
+            <script>
+                let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
+            </script>
+    </body>
+</html>
